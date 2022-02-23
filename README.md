@@ -27,3 +27,6 @@ Packages:
 2) Go to Test> Test Explorer
 3) From Test Explorer right click on the project
 4) Click 'Run'
+
+<li>Note:
+I'll add encrypt/decrypt passwords if required
