@@ -4,9 +4,21 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>5950567e-13d4-44a3-bb38-2db549d73f81</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Support\**" />
+    <EmbeddedResource Remove="Support\**" />
+    <None Remove="Support\**" />
+    <SpecFlowFeatureFiles Remove="Support\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Support\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="RestSharp" Version="106.11.7" />
@@ -19,10 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Support\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Features\DELETEUser.feature.cs">
       <DependentUpon>DeleteUser.feature</DependentUpon>
     </Compile>
@@ -30,5 +38,11 @@
       <DependentUpon>GetUser.feature</DependentUpon>
     </Compile>
   </ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 
 </Project>
