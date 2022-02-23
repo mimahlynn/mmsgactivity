@@ -27,6 +27,13 @@ Packages:
 2) Go to Test> Test Explorer
 3) From Test Explorer right click on the project
 4) Click 'Run'
+  
+## How to change Environment URL
+1) Open appsetings.json file
+2) Edit url depending on what what environment it will run
+<li> Will use environment variables where CI/CD is required
+ 
+ 
 
 <li>Note:
 I'll add encrypt/decrypt passwords if required
