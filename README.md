@@ -37,3 +37,6 @@ Packages:
 
 <li>Note:
 I'll add encrypt/decrypt passwords if required
+  
+## Case Study
+ <li> Test Cases can be accessed here :https://github.com/mimahlynn/mmsgactivity/blob/7dd3448e96b5912c59cdff06be3c288620edeec8/Test%20Cases%20for%20Ted%20Cinema.xlsx
